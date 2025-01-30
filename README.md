@@ -9,6 +9,7 @@ The dataset contains 12,684 instances and 25 features (categorical, integer, bin
 Dataset available at: https://archive.ics.uci.edu/dataset/603/in+vehicle+coupon+recommendation
 
 Steps
+
 Data Preprocessing:
 
 Handle missing values in the dataset.
