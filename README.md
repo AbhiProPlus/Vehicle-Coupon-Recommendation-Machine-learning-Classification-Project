@@ -6,7 +6,7 @@ This project focuses on building a machine learning model to predict whether a p
 Dataset
 The dataset contains 12,684 instances and 25 features (categorical, integer, binary). The target column is coupon_response, which indicates whether the person accepts the coupon.
 
-Dataset available at: In-Vehicle Coupon Recommendation Dataset
+Dataset available at: https://archive.ics.uci.edu/dataset/603/in+vehicle+coupon+recommendation
 
 Steps
 Data Preprocessing:
