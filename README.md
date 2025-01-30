@@ -22,9 +22,12 @@ Target Variable: coupon_response (Values: 0 for not accepted, 1 for accepted)
 ## **Key Features**
 
 Weather	: Weather conditions (e.g., sunny, rainy)
+
 Time of Day	Time during which the coupon offer is made
-Temperature	Environmental temperature in Celsius
+Temperature	Environmental temperature in Celsius.
+
 Passenger Type	: Type of passengers in the vehicle (e.g., family, solo)
+
 Coupon Offer Type	: Type of coupon offered (e.g., discount, free item)
 ...	Additional features related to the driving scenario
 
