@@ -10,7 +10,7 @@ Feature Engineering & Selection
 Model Training & Evaluation
 Predictions on Unseen Data
 
-##📂**Dataset Details**
+## **Dataset Details**
 
 Link : https://archive.ics.uci.edu/dataset/603/in+vehicle+coupon+recommendation
 
@@ -19,7 +19,7 @@ Instances (Rows): 12,684
 Features (Columns): 25 (includes both categorical and numerical features)
 Target Variable: coupon_response (Values: 0 for not accepted, 1 for accepted)
 
-📊 ## **Key Features**
+## **Key Features**
 
 Weather	: Weather conditions (e.g., sunny, rainy)
 Time of Day	Time during which the coupon offer is made
@@ -28,7 +28,7 @@ Passenger Type	: Type of passengers in the vehicle (e.g., family, solo)
 Coupon Offer Type	: Type of coupon offered (e.g., discount, free item)
 ...	Additional features related to the driving scenario
 
-🎯 ## **Project Objectives**
+## **Project Objectives**
 
 Understand the Dataset
 Conduct Exploratory Data Analysis (EDA) to identify patterns, outliers, and correlations between features.
@@ -45,7 +45,7 @@ Experiment with different classification models (e.g., Random Forest, SVM) and e
 Predict Coupon Acceptance on Unseen Data
 Test the trained model on a separate unseen dataset to predict coupon acceptance.
 
-🛠️ ## **Tools & Technologies Used**
+## **Tools & Technologies Used**
 
 Programming Language: Python
 Libraries:
@@ -54,7 +54,7 @@ Visualization: matplotlib, seaborn
 Machine Learning: scikit-learn, imbalanced-learn
 Feature Engineering: scipy
 
-🏆 ## **Key Results & Insights**
+## **Key Results & Insights**
 
 Model Performance:
 Random Forest Classifier achieved a prediction accuracy of approximately 76% on the test set.
@@ -66,20 +66,20 @@ Prediction on Unseen Data:
 Successfully predicted coupon acceptance on unseen data, with high confidence in predictions for various coupon types.
 
 
-🔥 ## **Future Improvements**
+## **Future Improvements**
 
 Model Optimization: Fine-tune hyperparameters of the Random Forest model for better generalization.
 Real-time Predictions: Implement a real-time system for in-vehicle coupon recommendation.
 Additional Data Sources: Integrate more driving scenario data for enhanced prediction accuracy.
 
-📝 ## **Conclusion**
+## **Conclusion**
 
 This project successfully developed a machine learning model that can predict coupon acceptance based on real-time in-vehicle data. The use of preprocessing, feature selection, and model evaluation techniques led to a reliable and accurate model. Future improvements can include real-time deployment and the integration of additional data sources.
 
-🤝 ## Contributions
+## Contributions
 
 Feel free to fork the repository and submit pull requests! Any feedback is appreciated.
 
 
-📬 ## Contact
+## Contact
 For any queries, please contact via GitHub or email.
