@@ -3,12 +3,6 @@
 ## **Overview**
 This project focuses on developing a machine learning model to predict whether a person will accept a coupon during a drive based on various factors, such as weather conditions, time of day, passenger type, and more. The goal is to predict coupon acceptance in different driving scenarios, helping businesses offer personalized promotions.
 
-The project follows a structured approach:
-
-Data Exploration & Preprocessing
-Feature Engineering & Selection
-Model Training & Evaluation
-Predictions on Unseen Data
 
 ## **Dataset Details**
 
@@ -16,68 +10,59 @@ Link : https://archive.ics.uci.edu/dataset/603/in+vehicle+coupon+recommendation
 
 Dataset Name: In-Vehicle Coupon Dataset
 Instances (Rows): 12,684
-Features (Columns): 25 (includes both categorical and numerical features)
+Features (Columns): 26 (includes both categorical and numerical features)
 Target Variable: coupon_response (Values: 0 for not accepted, 1 for accepted)
 
-## **Key Features**
+## Key Steps in the Project
 
-Weather	: Weather conditions (e.g., sunny, rainy)
+1. **Data Preprocessing**:
+   - Handling missing values
+   - Encoding categorical variables (One-Hot and Binary Encoding)
+   - Dropping irrelevant columns (e.g., `occupation`)
 
-Time of Day	Time during which the coupon offer is made
-Temperature	Environmental temperature in Celsius.
+2. **Feature Engineering**:
+   - Skewness correction using transformations
+   - Feature selection based on correlation and importance
 
-Passenger Type	: Type of passengers in the vehicle (e.g., family, solo)
+3. **Modeling**:
+   - Training models (e.g., Random Forest, Gradient Boosting)
+   - Hyperparameter tuning using GridSearchCV
+   - Model evaluation using accuracy, ROC AUC, and confusion matrix
 
-Coupon Offer Type	: Type of coupon offered (e.g., discount, free item)
-...	Additional features related to the driving scenario
+4. **Pipeline**:
+   - Model creation with a pipeline for streamlined training and testing
+   - Saving and loading the trained model for future predictions
 
-## **Project Objectives**
+5. **Prediction on Unseen Data**:
+   - Encoding unseen data the same way as the training data
+   - Generating predictions for new data
 
-Understand the Dataset
-Conduct Exploratory Data Analysis (EDA) to identify patterns, outliers, and correlations between features.
+## Data
 
-Preprocess the Data
-Handle missing values, scale numerical features, and encode categorical variables for machine learning algorithms.
+The dataset includes various features related to the driving scenario, such as:
+- `destination`: The destination of the driver (e.g., Home, Work)
+- `passenger`: The type of passengers (e.g., Alone, Friend)
+- `weather`: Weather condition during the drive (e.g., Sunny, Snowy)
+- `coupon`: Type of coupon being offered
+- `maritalStatus`: Marital status of the driver
+- `education`: Education level of the driver
+- `age`, `income`, etc.
 
-Feature Engineering & Selection
-Perform feature selection to eliminate redundant features and enhance model accuracy.
+The target variable is `coupon_response`, where:
+- 1 indicates the coupon was accepted
+- 0 indicates the coupon was rejected
 
-Train and Evaluate Models
-Experiment with different classification models (e.g., Random Forest, SVM) and evaluate performance using metrics like accuracy, precision, recall, and F1-score.
+## Model Evaluation
 
-Predict Coupon Acceptance on Unseen Data
-Test the trained model on a separate unseen dataset to predict coupon acceptance.
-
-## **Tools & Technologies Used**
-
-Programming Language: Python
-Libraries:
-Data Processing: pandas, numpy
-Visualization: matplotlib, seaborn
-Machine Learning: scikit-learn, imbalanced-learn
-Feature Engineering: scipy
-
-## **Key Results & Insights**
-
-Model Performance:
-Random Forest Classifier achieved a prediction accuracy of approximately 76% on the test set.
-
-Feature Importance:
-Features like weather, time of day, and passenger type were found to be the most influential in predicting coupon acceptance.
-
-Prediction on Unseen Data:
-Successfully predicted coupon acceptance on unseen data, with high confidence in predictions for various coupon types.
+The performance of the model is evaluated using various metrics:
+- **Accuracy**: The percentage of correct predictions
+- **ROC AUC**: Area Under the Receiver Operating Characteristic Curve
+- **Confusion Matrix**: To visualize the classification results
 
 
-## **Future Improvements**
-
-Model Optimization: Fine-tune hyperparameters of the Random Forest model for better generalization.
-Real-time Predictions: Implement a real-time system for in-vehicle coupon recommendation.
-Additional Data Sources: Integrate more driving scenario data for enhanced prediction accuracy.
-
-## **Conclusion**
-
-This project successfully developed a machine learning model that can predict coupon acceptance based on real-time in-vehicle data. The use of preprocessing, feature selection, and model evaluation techniques led to a reliable and accurate model. Future improvements can include real-time deployment and the integration of additional data sources.
+ Acknowledgments
+The dataset used in this project is publicly available and can be used to predict coupon acceptance behavior.
+Thanks to various tutorials and resources that helped in building this project.
 
 ## Contributions
 
